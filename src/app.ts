@@ -292,4 +292,4 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor: Element): void => {
     });
 });
 
-console.log('✅ TypeScript інтерактивність ініціалізована!');
+console.log('TypeScript інтерактивність ініціалізована!');
