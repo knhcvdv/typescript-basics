@@ -1,34 +1,14 @@
-"use strict";
 // ============================================
 // Система управління розкладом в університеті
 // Використання: Union Types, Type Aliases, Arrays
 // ============================================
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.schedule = exports.courses = exports.classrooms = exports.professors = void 0;
-exports.addProfessor = addProfessor;
-exports.addClassroom = addClassroom;
-exports.addCourse = addCourse;
-exports.addLesson = addLesson;
-exports.findAvailableClassrooms = findAvailableClassrooms;
-exports.getProfessorSchedule = getProfessorSchedule;
-exports.getCourseSchedule = getCourseSchedule;
-exports.getClassroomSchedule = getClassroomSchedule;
-exports.validateLesson = validateLesson;
-exports.getClassroomUtilization = getClassroomUtilization;
-exports.getMostPopularCourseType = getMostPopularCourseType;
-exports.reassignClassroom = reassignClassroom;
-exports.cancelLesson = cancelLesson;
 // ============================================
 // 3. МАСИВИ ДАНИХ
 // ============================================
 let professors = [];
-exports.professors = professors;
 let classrooms = [];
-exports.classrooms = classrooms;
 let courses = [];
-exports.courses = courses;
 let schedule = [];
-exports.schedule = schedule;
 // Лічильник для генерації унікальних ID занять
 let lessonIdCounter = 1;
 // ============================================
@@ -267,3 +247,8 @@ function getCourseSchedule(courseId) {
 function getClassroomSchedule(classroomNumber) {
     return schedule.filter(lesson => lesson.classroomNumber === classroomNumber);
 }
+export { 
+// Функції
+addProfessor, addClassroom, addCourse, addLesson, findAvailableClassrooms, getProfessorSchedule, getCourseSchedule, getClassroomSchedule, validateLesson, getClassroomUtilization, getMostPopularCourseType, reassignClassroom, cancelLesson, 
+// Дані
+professors, classrooms, courses, schedule };
