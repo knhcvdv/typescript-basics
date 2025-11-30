@@ -15,6 +15,6 @@ src/schedule-demo.ts – приклади використання
 
 Запуск
 npm run build
-node dist/schedule-demo.js
+npm run schedule
 
 Особливості: повна типізація, обробка помилок і конфліктів, ефективна робота з масивами.
