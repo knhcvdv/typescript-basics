@@ -280,7 +280,7 @@ document.addEventListener('mouseover', (e: MouseEvent): void => {
 
 // Плавна прокрутка для всіх внутрішніх посилань
 document.querySelectorAll('a[href^="#"]').forEach((anchor: Element): void => {
-    anchor.addEventListener('click', function (e: MouseEvent): void {
+    anchor.addEventListener('click', function (e: Event): void {
         e.preventDefault();
         const href: string | null = anchor.getAttribute('href');
         if (href) {
